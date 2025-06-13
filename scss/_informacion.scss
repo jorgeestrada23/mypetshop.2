@@ -1,0 +1,31 @@
+.main-informacion{
+    padding: 5vh;
+    text-align: center;
+    h2{
+        text-decoration: underline;
+    }
+    .you{
+        border: 3px solid #f0d9a1;
+        border-radius: 10px;
+        .cuidado{
+            text-align: center;
+            text-shadow:#f0d9a1;
+            text-overflow: ellipsis;
+            margin-top: 5px;
+        }
+        .youtube{
+            height: 500px;
+            width: 500px;
+        }
+    }
+    @include mobile {
+        .you{
+            padding: 5vh;
+            .youtube{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        }
+    
+}

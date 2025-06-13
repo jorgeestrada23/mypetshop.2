@@ -1,0 +1,52 @@
+header{
+    text-align: center;
+    .logo{
+        border-radius: 15px;
+        width: 15vh;
+        height: 15vh;
+    }
+    h1{
+        color: rgb(33, 75, 61);
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        border: 2px solid rgb(255, 179, 92);
+    }
+
+    li{
+        background-color: rgb(255, 225, 128);
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: inset;
+        list-style: none;
+        
+    }
+    @include mobile{
+            flex-direction: row;
+            padding: 0px 30px;
+            justify-content: space-between;
+            text-align: center;
+
+            .logo{
+            height: 15vh;
+            width: auto;
+            }
+            h1{
+                display: none;
+            }
+            li{
+            
+                display: flex;
+                padding: 2px;
+            
+            }
+            p{
+                display: none;
+            }
+        }
+}
+

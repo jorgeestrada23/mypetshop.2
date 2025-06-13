@@ -1,0 +1,21 @@
+footer{
+    @include flex-row;
+    .rrss{
+        text-align: end;
+        height: 8vh;
+        width: auto;
+    }
+    h3{
+        border: 2px solid rgb(255, 179, 92);
+
+    }
+    p{
+        border: 2px solid rgb(255, 179, 92);
+    }
+    @include mobile{
+        flex-direction: column;
+        .rrss{
+            flex-direction:column-reverse;
+        }
+    }
+}

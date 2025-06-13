@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body{
+    *{
+        margin: 0%;
+        padding: 0%;
+        background-color: rgb(253, 207, 151);
+        text-decoration: none;
+        font-family: "Roboto Condensed", sans-serif;
+        
+    }
+    
+}
+
+@mixin mobile {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        @content;
+    }
+};
+@mixin flex-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+.main-accesorios{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .grid-ventas{
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        justify-content: center;
+    }
+    .tarjeta-producto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #fcd110;
+        border-radius: 10px;
+        padding: 10vh;
+        background-color: #ffad5a;
+        transition: box-shadow 0.3s;
+        
+    }
+    .tarjeta-producto:hover{
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .producto-img{
+        width: 100%;
+        height: 60%;
+        border-radius: 35px;
+    }
+    .producto-info{
+        margin-top: 1px;
+    }
+    .producto-footer {
+        display: flex;
+        justify-content: start;
+    }
+
+    @include mobile{
+        .grid-ventas{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
